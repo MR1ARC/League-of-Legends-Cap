@@ -98,3 +98,9 @@ body{
     flex-direction: column;
     gap: 20px;
 }
+
+@media screen and (max-width: 720px) {
+    .header {
+        display: none;
+    }
+}
