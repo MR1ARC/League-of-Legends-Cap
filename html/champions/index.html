@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="/css/champions/style.css">
 </head>
 <body>
+    <div id="header"></div>
+    <script>
+        fetch("../../components/header/header.html")
+            .then(r => r.text())
+            .then(html => {
+            document.getElementById("header").innerHTML = html;
+        });
+    </script>
     <div class="top">
+        
         <div>
             CHOOSE YOUR
         </div>

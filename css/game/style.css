@@ -1,0 +1,334 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #0a1428;
+    overflow-x: hidden;
+    background-color: #0a1428;
+   
+}
+
+
+.hero{
+    margin-top:90px ;
+    position: relative;
+    color: white;
+    height: 540px;
+    display: flex;
+    
+
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.hero .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: end;
+    margin: 0 0px 80px 50px;
+   gap: 20px;
+   
+}
+
+.hero .content div:nth-child(1) {
+    font-size: 20px;
+    font-weight: 400;
+    
+    text-transform: uppercase;
+}
+
+.content div:nth-child(2){
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 900;
+    max-width: 600px;
+    text-transform: uppercase;
+}
+
+.hero .content div:nth-child(3){
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.hero .content div:nth-child(4){
+    
+   width: max-content;
+    padding: 20px 30px;
+    color: #0a1428;
+    background-color: #c8AA6e;
+    font-size: 26px;
+    font-weight: 100;
+    
+    cursor: pointer;
+   
+    
+}
+
+
+.welcome{
+    background-color: white;
+    height: 610px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.welcome div:nth-child(1){
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+.welcome div:nth-child(2){
+    font-size: 74px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #0a1428;
+}
+
+.welcome div:nth-child(3){
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 800px;
+    line-height: 1.5;
+    text-align: center;
+    color: #0a1428;
+}
+
+.ruins{
+    height: 640px;
+}
+
+
+.what{
+    height: 640px;
+    margin-top: -3.79px;
+    position: relative;
+
+}
+.what video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+
+
+}
+
+.what .text{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    text-align: center;
+}
+
+.what .text div:nth-child(1){
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.what .text div:nth-child(2){
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 836px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+
+.distroy, .path, .jungle, .lane{
+    height: max-content;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.distroy-l, .path-l, .jungle-l, .lane-l{
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    padding: 50px 10px;
+}
+
+.distroy-l .d, .path-l .d, .jungle-l .d, .lane-l .d{
+    font-size: 60px;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+
+}
+
+.c{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom:40px ;
+    max-width: 700px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.distroy-l .image, .path-l .image,  .jungle-l .image, .lane-l .image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-size: 14px;
+    
+    
+}
+
+.image button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+
+
+
+
+.distroy-l img , .path-l img, .jungle-l img, .lane-l img{
+    width: 50%;
+    object-fit: cover;
+    
+}
+
+.y-n, .e-n, .tu, .in, .bn, .dr, .top, .mid, .bot, .sup, .jung{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0.4;
+    transition: all 0.6s ease;
+
+}
+
+.e-n, .in, .dr, .jung, .mid, .sup, .bot{
+    margin-left: -60px;
+
+}
+
+.y-n:hover, .e-n:hover, .tu:hover, .in:hover, .bn:hover, .dr:hover, .top:hover, .mid:hover, .bot:hover, .sup:hover, .jung:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.active{
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
+
+.distroy-r, .path-r, .jungle-r,  .lane-r{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+    height: 600px;
+}
+
+.distroy-r img, .path-r img, .jungle-r img, .lane-r img{
+    width: 100%;
+}
+
+.distroy-r div:nth-child(2), .path-r div:nth-child(2), .jungle-r div:nth-child(2), .lane-r div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+    margin-top: 20px;
+    padding-right: 10px;
+    max-width: 600px;
+}
+
+
+.sh{
+    font-size: 28px;
+    font-weight: 600;
+    font-style: italic; 
+}
+
+
+.power{
+    height: max-content;
+    color: white;
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 160px;
+
+}
+
+.power div:nth-child(1){
+    
+    font-size: 60px;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    
+    margin-bottom: 20px;
+}
+
+.power div:nth-child(2){
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 900px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.power video{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.power div:nth-child(4){
+   display: flex;
+   width: 100%;
+}
+
+
+
+
+

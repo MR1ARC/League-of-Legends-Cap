@@ -26,7 +26,9 @@ const start = async()=>{
                 <img alt="" src = ${src} >
 
                 <div class="name">
+                    <p>
                     ${chmapion.name}
+                    </p>
                 </div>
             
             `
