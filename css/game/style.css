@@ -288,7 +288,7 @@ body{
 .power{
     height: max-content;
     color: white;
-    margin-top: 160px;
+    margin-top: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -297,7 +297,7 @@ body{
 
 }
 
-.power div:nth-child(1){
+.power .po{
     
     font-size: 60px;
     font-weight: 700;
@@ -308,7 +308,7 @@ body{
     margin-bottom: 20px;
 }
 
-.power div:nth-child(2){
+.power .ch{
     font-size: 20px;
     font-weight: 300;
     max-width: 900px;
@@ -317,18 +317,75 @@ body{
     margin-bottom: 16px;
 }
 
+.render-content{
+    width: 100%;
+    
+    
+    overflow: hidden;
+  
+}
+
 .power video{
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-.power div:nth-child(4){
+.power .images{
    display: flex;
-   width: 100%;
+   width: max-content;
+   justify-content: center;
+    align-items: center;
+   gap: 8px;
+   margin-top: 20px;
+   margin-bottom: 40px;
+  
+}
+
+.fist, .coin, .fire{
+    opacity: 0.4;
+}
+
+.fist:hover, .coin:hover, .fire:hover{
+    opacity: 1;
+    cursor: pointer;
+    
+}
+
+.power .images img{
+    width: 120px;
+    
+}
+
+.power .render-content img{
+    width: 100%;
+}
+
+.power .active{
+    border: 1px solid #c8AA6e;
+    transform: scale(1.02);
+    opacity: 1;
 }
 
 
+.earn{
+    padding-top: 4px;
+    font-size: 18px;
+    border-top: 1px solid gray;
+    font-weight: 800;
+    width: 900px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.e-dis{
+    font-size: 18px;
+    
+    max-width: 900px;
+    text-align: center;
+    margin: 20px auto 40px auto;
+    line-height: 1.5;
+}
 
 
 

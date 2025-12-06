@@ -315,4 +315,61 @@ sup.addEventListener('click', ()=>{
 
 
 
+const fist = document.querySelector('.fist')
+const coin = document.querySelector('.coin')
+const fire = document.querySelector('.fire')
+
+fist.addEventListener('click', ()=>{
+    const render = document.querySelector('.render-content')
+    fist.classList.add('active')
+    coin.classList.remove('active')
+    fire.classList.remove('active')
+    render.innerHTML = `
+        <video autoplay muted controls loop>
+            <source src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/8d49feeb42c45ac59b1d6cc1cae71d64ce0089f7.webm" type="video/webm">
+        </video>
+    `
+
+    const earn = document.querySelector('.earn')
+    const eDis = document.querySelector('.e-dis')
+    earn.innerHTML = `EARN EXPERIENCE`
+    eDis.innerHTML = `When champions earn a certain amount of experience, they level up and can unlock or strengthen abilities and raise their base stats. Gain experience by killing enemy units and champions, assisting in a kill, and destroying defense structures.`
+    
+})
+
+coin.addEventListener('click', ()=>{
+    const render = document.querySelector('.render-content')
+    fist.classList.remove('active')
+    coin.classList.add('active')
+    fire.classList.remove('active')
+    render.innerHTML = `
+        <video autoplay muted controls loop>
+            <source src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/9b52333c4284f3e8e95a36981ba76c11820e0ac5.webm" type="video/webm">
+        </video>
+    `
+    const earn = document.querySelector('.earn')
+    const eDis = document.querySelector('.e-dis')
+    earn.innerHTML = `EARN GOLD`
+    eDis.innerHTML = `Gold is the in-game currency to buy items for your champion. Earn gold by killing enemy units and champions, assisting in a kill, destroying defense structures, and equipping gold income items.`
+    
+    
+})
+
+fire.addEventListener('click', ()=>{
+    const render = document.querySelector('.render-content')
+    fist.classList.remove('active')
+    coin.classList.remove('active')
+    fire.classList.add('active')
+    render.innerHTML = `
+        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/7c790e73c1d817e57c174d4c4cdceb87d061e5b6-2560x1440.png?auto=format&fit=fill&q=80&w=2368"/>
+    `
+    const earn = document.querySelector('.earn')
+    const eDis = document.querySelector('.e-dis')
+    earn.innerHTML = `SHOP`
+    eDis.innerHTML = `The Shop is where you can buy and sell items with gold you’ve earned. It can only be accessed while you are at the Fountain.`
+    
+    
+})
+
+
 
