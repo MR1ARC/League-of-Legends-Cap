@@ -10,7 +10,7 @@
     <div id = "home">
         <div id="header"></div>
         <script>
-            fetch("/public/components/header.html")
+            fetch("./components/header.html")
                 .then(r => r.text())
                 .then(html => {
                 document.getElementById("header").innerHTML = html;
