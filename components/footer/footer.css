@@ -1,121 +1,8 @@
-body{
-
-    
-    margin: 0;
-    padding: 0; 
-
-    
-}
-
-#home{
-    width: 100vw;
-    height: max-content;
-}
-
-
-
-
-/* header-open----------------------- */
-
-
-
-
-
-
-
-
-
-/* header-close--------------------- */
-
-
-
-.hero {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    margin-top: 90px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 2em;
-    text-align: center;
-}
-
-.hero video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-
-.bg-vid{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-    z-index: 1;
-}
-
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-}
-
-.content-hero{
-    
-    z-index: 4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-style: italic;
-}
-
-.content-hero img{
-    width: 50%;
-    height: 50%;
-    
-    
-   
-}
-
-.featured-news{
-    
-    height: max-content;
-    
-    display: flex;
-    
-    flex-direction: column;
-    gap: 20px;
-}
-
-
-
-
-
-
-
-/* KeyFrames and animations */
-
-
 footer{
     background-color: #111111;
     color: white;
     height: max-content;
         /* overflow: hidden; */
-    margin-top: -20px;
     padding-bottom: 60px;
     display: flex;
     flex-direction: column;
@@ -246,14 +133,6 @@ footer .up > div:hover{
 }
 
 
-
-@media screen and (max-width: 986px) {
-  
-    .hero{
-        font-size: 24px;
-    }
-
-}
 
 
 

@@ -372,4 +372,66 @@ fire.addEventListener('click', ()=>{
 })
 
 
+const abil = document.querySelector('.abli')
+const summoner = document.querySelector('.summoner')
+const item = document.querySelector('.item')
+
+abil.addEventListener('click', ()=>{
+    abil.classList.add('active')
+    summoner.classList.remove('active')
+    item.classList.remove('active')
+    
+    const render = document.querySelector('.abilities-r')
+
+    render.innerHTML = `
+        <div>
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/0ba11ec8e7981f3b482e40cacd5780253d1f3bd3-1806x372.png?auto=format&fit=fill&q=80&w=1666" alt="">
+        </div>
+        <div>Abilities</div>
+        <div>Most champions have a unique kit made up of five abilities: a Passive, three Basics, and an Ultimate. These abilities are mapped to the Q, W, E, and R keys.</div>
+    `
+
+
+})
+
+summoner.addEventListener('click', ()=>{
+    abil.classList.remove('active')
+    summoner.classList.add('active')
+    item.classList.remove('active')
+    
+    const render = document.querySelector('.abilities-r')
+
+    render.innerHTML = `
+        <div>
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/3edf5b4e32d38eaab45eda9bdef7147703cf38d4-1806x372.png?auto=format&fit=fill&q=80&w=1384" alt="">
+        </div>
+        <div>Summoner Spells</div>
+        <div>Summoner spells are abilities with unique effects that champions can use. They are mapped to the D and F keys. There are many spells, but a few commonly used ones are Flash, Teleport, Smite, and Ignite.</div>
+    `
+
+
+
+})
+
+item.addEventListener('click', ()=>{
+    abil.classList.remove('active')
+    summoner.classList.remove('active')
+    item.classList.add('active')
+    
+    const render = document.querySelector('.abilities-r')
+
+    render.innerHTML = `
+        <div>
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/fb1e69d96d9b5d2fb20cad10985345cd6c795eed-1806x372.png?auto=format&fit=fill&q=80&w=1370" alt="">
+        </div>
+        <div>items</div>
+        <div>Items enhance your champion’s performance, like granting faster movement, improved damage, and reduced ability cooldowns. Unlike Trinkets, they require gold to purchase.</div>
+    `
+    
+
+
+})
+
+
+
 
